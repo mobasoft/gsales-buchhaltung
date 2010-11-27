@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Namenskonventionen
 
 = Konventionen =
 
@@ -25,7 +25,7 @@ private $_var;
 
 Klassenkonstanten werden stets mit Großbuchstaben benannt:
 {{{
-public $KONSTANT = 'konstante';
+public $CONSTANT = 'konstante';
 }}}
 
 Ebenso verhält es sich mit Methoden, die je nach Sichtbarkeit folgendes Schema verwenden:
