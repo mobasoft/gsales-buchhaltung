@@ -1,0 +1,85 @@
+* 		{margin:0px;padding:0px;}
+body 	{
+	background: #e1e1e1 url('img/bg_body.gif') repeat-x top center;
+	text-align:center;
+	font-family:Tahoma,Helvetica,Sans-Serif;
+	font-size:80%;
+	color:#000;
+}
+img.open, img.close, img#logout {cursor:pointer;margin-right:6px;}
+a		{text-decoration:none;color:#5F99FF;}
+a:hover	{text-decoration:underline;color:#666;}
+/* PAGE-FORMATTING */
+#wrap {
+	position:absolute;
+	top:40px;
+	left:26px;
+	width:95%;
+	background:#fff;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-topleft:5px;
+	-khtml-border-radius-topright:5px;
+	-khtml-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	border-radius-topright:5px;
+	border-radius-topleft:5px;
+	border: 1px solid #999;
+	-moz-box-shadow: 5px 5px 10px #aaa;
+	-webkit-box-shadow: 5px 5px 10px #aaa;
+	box-shadow: 5px 5px 10px #aaa;
+}
+
+/* HEADER */
+#header 	{position:absolute;z-index:10;top:0px;left:40px;height:100px;text-align:left;}
+#header #logo {width:135px;float:left;display:inline-block;font-size:11px;}
+#logo img 	{display:block;margin:0px;}
+#logo span 	{position:absolute;z-index:20;left:18px;top:75px;font-size:12px;letter-spacing:2px;}
+
+/* SIDEBAR */
+div#leftbar {float:left;display:inline;width:120px;margin-top:70px;text-align:left;margin-left:20px;}
+ul.menu 			{list-style:none;margin:0;padding:0;}
+ul.menu li 		{padding:5px 0;border-bottom:1px dotted #c9c9c9;}
+ul.menu li > a 	{text-decoration:none;color:#000;}
+ul.menu li > a:hover {text-decoration:none;border-bottom:1px solid #000;}
+ul.menu li > ul.submenu {margin:0;margin-left:17px;list-style:none;}
+ul.menu li > ul.submenu > li {font-size:90%;padding:1px 0px;border-bottom:none;}
+ul.menu li > ul.submenu > li > a {text-decoration:none;color:#666;}
+ul.menu li > ul.submenu > li > a:hover {text-decoration:none;border-bottom:1px solid #333;}
+p.login 	{color:#296f93;}
+
+/* CONTENT */
+#content 	{float:right;width:86%;margin-top: 30px;left:150px;text-align:left;padding:10px;}
+#content h1 {margin:10px;font-size:160%;color:#666;}
+#whereIam	{margin:10px;font-size:90%;}
+#whereIam a {text-decoration:none;}
+
+/* Formulare */
+form fieldset 	{padding:5px;border:none;background:#f1f1f1;margin-bottom:10px;}
+form fieldset legend {font-size:12px;font-style:italic;color:#000;border-bottom:1px solid #000;margin-left:15px;background:#fff;padding:2px;}
+form fieldset div {margin: 5px 0px;}
+form fieldset div label {float:left;width:12em;margin-right:20px;}
+form fieldset .fields {padding:2px;color:#333;min-width:15%;}
+form .submit 	{margin-left:15px;}
+/* jquery-UI-Formattings */
+.ui-widget {padding:1px;background:#f9fafb;border:1px solid #ddd;}
+.ui-widget-header {padding:3px 5px;}
+.ui-widget-content {background:#f9fafb;border:none;padding:3px;}
+.ui-tabs {border:1px solid #ddd;-khtml-border-radius:5px;padding:0px;}
+.ui-tabs-nav {border:none;}
+.ui-tabs .ui-tabs-hide {display:none;}
+.ui-tabs-panel {background:#f9fafb;}
+
+/* DataTable */
+.dataTable {border:1px solid #ddd;margin-top:5px;}
+.dataTable thead {border-spacing:1px;}
+.dataTable thead th {background:#ddd;padding:1px;}
+.dataTable tbody {background:none;}
+
+/* General Content Formatting */
+.tbl		{display:table;width:100%;}
+.tbl .row	{display:table-row;}
+.tbl .row .cell {display:table-cell;padding:2px;}
+
+/* Footer */
+#footer {clear:both;margin-left:150px;text-align:left;padding:10px 0px;;font-size:85%;}

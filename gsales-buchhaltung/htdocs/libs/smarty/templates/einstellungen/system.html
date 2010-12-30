@@ -1,0 +1,28 @@
+{include file="header.html"}
+<h1>Systemeinstellungen</h1>
+<br />
+<form action="" method="post" id="system">
+<fieldset>
+<legend>System-Pfade</legend>
+<div><label for="smarty-tpls">Smarty-Templates:</label> <input type="text" name="smarty-tpls" id="smarty-tpls" value="{if isset($config.smarty.dirs.tpls)}{$config.smarty.dirs.tpls}{/if}" class="fields" style="width:45%" /></div>
+<div><label for="smarty-compile">Smarty-Compile:</label> <input type="text" name="smarty-compile" id="smarty-compile" value="{if isset($config.smarty.dirs.compile)}{$config.smarty.dirs.compile}{/if}" class="fields" style="width:45%" /></div>
+<div><label for="smarty-cache">Smarty-Cache:</label> <input type="text" name="smarty-cache" id="smarty-cache" value="{if isset($config.smarty.dirs.cache)}{$config.smarty.dirs.cache}{/if}" class="fields" style="width:45%" /></div>
+</fieldset>
+<fieldset>
+<legend>Datenbank</legend>
+<div><label for="db-adapter">DB-Adapter:</label> <select name="db-adapter" id="db-adapter" size="1">
+<option value="mysql">mysql</option>
+<option value="pdo-mysql">pdo-mysql</option>
+</select></div>
+<div><label for="db-host">DB-Host:</label> <input type="text" name="db-host" id="db-host" value="{if isset($config.dsn.hostspec)}{$config.dsn.hostspec}{/if}" class="fields" /></div>
+<div><label for="db-name">DB-Name:</label> <input type="text" name="db-name" id="db-name" value="{if isset($config.dsn.database)}{$config.dsn.database}{/if}" class="fields" /></div>
+<div><label for="db-username">DB-Benutzer:</label> <input type="text" name="db-username" id="db-username" value="{if isset($config.dsn.username)}{$config.dsn.username}{/if}" class="fields" /></div>
+<div><label for="db-password">DB-Passwort:</label> <input type="password" name="db-password" id="db-password" value="{if isset($config.dsn.password)}{$config.dsn.password}{/if}" class="fields" /></div>
+</fieldset>
+<fieldset>
+<legend>gSales API</legend>
+<div><label for="apikey">API-Schlüssel:</label> <input type="text" name="apikey" id="apikey" value="{if isset($config.api.key)}{$config.api.key}{/if}" class="fields" style="width:15%" /></div>
+</fieldset>
+<p class="submit"><input type="submit" name="save" id="save" value="Speichern" /></p>
+</form>
+{include file="footer.html"}

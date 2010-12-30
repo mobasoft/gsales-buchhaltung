@@ -1,0 +1,61 @@
+{include file="header.html"}
+<h1>Dashboard</h1>
+
+<div class="tbl">
+<div class="row">
+<div class="cell" style="width:50%;">
+<!-- LEFT CELL -->
+<div class="ui-widget ui-corner-all">
+<div class="ui-widget-header ui-corner-all">Umsatz {strftime('%B %Y')}</div>
+<div class="ui-widget-content">
+<script type="text/javascript">
+swfobject.embedSWF('/libs/ofc/open-flash-chart.swf','umsatzHeute','100%','150','9.0.0','expressInstall.swf',{ 'data-file':'/stats/stats.php?do=cashflow-today' });
+</script>
+<div id="umsatzHeute"></div>
+</div>
+</div>
+
+<br />
+
+</div>
+<div class="cell" style="width:50%;">
+<!-- RIGHT CELL -->
+<div class="ui-widget ui-corner-all">
+<div class="ui-widget-header ui-corner-all">Nicht importierte gSales - Rechnungen</div>
+<div class="ui-widget-content">
+<table width="100%" class="dataTable ui-corner-tl ui-corner-tr" id="notImportInvoices-5">
+<thead>
+<tr>
+<th style="width:120px;">Datum</th>
+<th>Re.-NR.</th>
+<th style="width:100px;">MwSt.</th>
+<th style="width:100px;">Gesamt</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<br style="clear:both;" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="tabs">
+<ul>
+<li><a href="#tab1">Umsätze heute</a></li>
+<li><a href="#tab2">Quartals-Übersicht</a></li>
+<li><a href="#tab3">Konten-Statistik Quartal</a></li>
+</ul>
+<div id="tab1">
+tabelle
+</div>
+<div id="tab2">
+tabelle
+</div>
+<div id="tab3">
+tabelle
+</div>
+</div>
+{include file="footer.html"}
